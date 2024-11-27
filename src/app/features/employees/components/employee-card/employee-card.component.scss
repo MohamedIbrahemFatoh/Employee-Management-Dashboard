@@ -1,0 +1,60 @@
+@import '../../../../../sass/variables';
+
+.card {   
+    background-color: #222222;
+    color: #eee;
+    width: 100%;
+    padding: rem(10);
+    margin-top: rem(22);
+    box-shadow: 0 0 rem(7) #999;
+    border-radius: rem(20);
+    text-align: center;
+    &_img {
+        width: rem(70);
+        height: rem(70);
+        margin: rem(25) auto 0;
+        display: block;
+        box-shadow: 0 0 rem(16) #bbb; 
+        border-radius: 50%;
+    }
+    &_name {
+        margin-top: rem(25);  
+        font-weight: bold;
+    }
+    &_discription {
+        margin-top: rem(5); 
+        margin-bottom: rem(15);
+        text-align: center;
+        color: #bbb;
+    }
+    &_btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &_btn {
+        height: rem(35);
+        background: transparent;
+        outline:0;
+        text-shadow: 0 0 rem(1) #999;
+        border: 0;
+        font-size: rem(18);
+        &:focus, &:hover, &:active{
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+    }
+    &_edit-btn {
+        color: #71652d;
+        &:hover {
+            color: rgb(142 132 89);
+        }
+    }
+    &_delete-btn {
+        color: rgba(255, 0, 0, 0.52);
+        &:hover {
+            color: rgb(255, 0, 0);
+        }
+    }
+}

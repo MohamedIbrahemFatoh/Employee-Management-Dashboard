@@ -1,0 +1,49 @@
+@import '../../../../sass/variables';
+
+.home {
+    height: 100vh;
+    &_container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &_content {
+        color: #aaa;
+        margin: 0px auto;
+        background-color: #222222;
+        color: #eee;
+        padding: rem(50);
+        box-shadow: rem(0) rem(0) rem(15) #999;
+        border-radius: rem(20);
+    }
+    &_title {
+        text-align: center;
+        margin-top: rem(0);
+        margin-bottom: rem(15); 
+        font-size: rem(25);
+    }
+    &_description {
+        margin-bottom: rem(20);
+        font-size: rem(16);
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
+        color: #999
+    }
+    &_navigate-btn {
+        width: 100%;
+        font-size: rem(21);
+        margin: 0 auto;
+        height: rem(42);
+        color: white;
+        text-decoration: underline;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        &:focus, &:hover, &:active {
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+    }
+}

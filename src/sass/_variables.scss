@@ -1,0 +1,21 @@
+// COLORS
+$bg-content: #282a37;
+
+// FONTS
+$font-primary: 'Outfit', sans-serif !important;
+
+// SIZES
+$font-size-large: 16px;
+$font-size-small: 13px;
+$font-size-smaller: 10px;
+
+
+$base-size: 16;
+@function rem($target, $context: $base-size) {
+  @return calc($target / $base-size) * 1rem;
+}
+
+
+
+
+

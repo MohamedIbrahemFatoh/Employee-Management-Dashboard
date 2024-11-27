@@ -1,0 +1,12 @@
+<div class="card">
+  <img [src]="employeeDetails.avatar" class="card_img" alt="avatar" *ngIf="employeeDetails.avatar">
+  <img src="../../../../../assets/images/default-avaatar.png" class="card_img" alt="avatar" *ngIf="!employeeDetails.avatar">
+<div class="card_name"> {{employeeDetails.first_name  + " " + employeeDetails.last_name}}</div>
+  <div class="card_discription"> {{employeeDetails.email}} </div>
+  <div class="card_btns">
+    <button class="btn btn-primary card_btn card_edit-btn" [disabled]="loading" (click)="editEmployee()"> Edit </button> 
+    <button class="btn btn-primary card_btn card_delete-btn" [disabled]="loading" (click)="deleteEmployee()"> Delete </button>
+  </div> 
+</div>
+
+

@@ -1,0 +1,40 @@
+@import '../../../../../sass/variables';
+
+.paginator {
+    margin-top: rem(15);
+    background-color: transparent;
+    .mat-mdc-paginator {
+        background-color: transparent;
+    }
+    ::ng-deep.mat-mdc-paginator-container {
+        background-color: #00000010 !important;
+    }
+}
+
+.empty {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    &_content {
+        background-color: #222222;
+        color: #eee;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0px 0px 10px #999;
+        border-radius: 20px;
+    }
+    &_title {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 20px; 
+    }
+    &_btn {
+        width: 65%;
+        font-size: 16px;
+        margin: 0 auto;
+        color: #998a67;
+        text-decoration: underline;
+    }
+}
+
+
